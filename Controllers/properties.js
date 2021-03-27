@@ -8,7 +8,7 @@ const { uploader, destroyImage } = require('../Utils/images');
 //Get All Properties
 const getAll = async (req, res) => {
     const properties = await Property.find().limit(4).populate('ownerId').sort({ createdAt: -1 }).lean();
-    verifyUser(req, res);
+    // verifyUser(req, res);
     return properties;
 }
 
