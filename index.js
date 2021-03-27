@@ -12,7 +12,7 @@ app.use('/properties', router);
 app.use('/api', userRouter);
 app.use('/api', emailRouter)
 
-app.listen(config.port, (err) => {
+app.listen(process.env.PORT||config.port, (err) => {
     if (err) {
         console.log('Server error:', err);
         return;
