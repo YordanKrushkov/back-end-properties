@@ -7,7 +7,6 @@ const config = {
         privateKey: process.env.PRIVATE_KEY
     },
     production: {
-        port: process.env.PORT,
         dbURL: process.env.DB_URL,
         privateKey: process.env.PRIVATE_KEY
     }
